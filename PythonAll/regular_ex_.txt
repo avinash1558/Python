@@ -1,0 +1,13 @@
+[]  => a set char.
+\  => escape special char.
+.  => any char.
+^ => start with
+$  => ends with
+*  => zero or more occurence
++  => one or more occurence
+{}  => specified no. occurence
+|  => either or
+()  => capture and group
+\d  => it is for digit (d{5}-d{4})
+\b  => start and end (\b for line \b)
+\A  => start with

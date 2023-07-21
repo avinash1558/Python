@@ -1,0 +1,9 @@
+d={"fish":"machhali",
+   "when":"jab",
+   "this":"yaha",
+   "rock":"pathar",
+   "book":"kitab"
+   }
+print(d.keys())
+c=input()
+print(d[c])

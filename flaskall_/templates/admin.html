@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{url_for('static',filename=" avi.css")}}">
+
+</head>
+
+<body>
+    <div id="menu">
+        <div id="box1"><img src="1st.png" alt="myordersite"></div>
+        <div id="box2">
+            <ul type="none" id="nav">
+                <!--<li>"{{nametohtml}}"</li>-->
+                <li>home</li>
+                <li>Service</li>
+                <li>About as</li>
+                <li>Contect</li>
+            </ul>
+        </div>
+    </div>
+    <div id="sec">
+        <!-- <h1 id="det">{{name}}</h1> -->
+
+
+        <p class="pas">Lorem,r sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing eli</p>
+        <a href="/post/first" class="pas">
+            lorem12</a>
+
+        <a href="/logout"><button id="but">Order Now</button></a>
+
+    <table>
+        <tr>
+    
+            <th>sno  </th>
+            <th>title  </th>
+            <th>slg   no</th>
+         
+        </tr>
+        {% for posts in post %}
+        <tr>
+            <td>{{posts.sn}}  </td>
+            <td>{{posts.title}}  </td>
+            <td>{{posts.slg}}</td>
+            <td><a href="/edit/{{posts.sn}}"><button>add</button></a></td>
+            <td><a href=""><button>edit</button></a></td>
+        </tr>
+    {% endfor %}
+    </table>
+    </div>
+
+</body>
+
+</html>

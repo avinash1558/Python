@@ -1,0 +1,7 @@
+{
+    "code-runner.runInTerminal": true,
+    "code-runner.saveAllFilesBeforeRun": true,
+    "code-runner.saveFileBeforeRun": true,
+    "editor.fontSize": 28,
+    "editor.mouseWheelZoom": true
+}

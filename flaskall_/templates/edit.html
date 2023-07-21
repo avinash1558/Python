@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename="avi.css")}}">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <input type="file" name="" id="">
+    
+    <form action="/edit/{{post.sn}}" method="post" class="det">
+    
+        <label for="na">title</label>
+        <input type="text" value="{{post.title}}"name="title" id="na">
+        <label for="na1">slg:</label>
+        <input type="text" value="{{post.slg}}" name="slg" id="na1">
+        <input type="submit" id="na3" value="now">
+    </form>
+</body>
+
+</html>

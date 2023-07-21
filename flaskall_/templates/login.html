@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        input {
+            display: block;
+        }
+
+        #username {
+            width: 250px;
+            height: 40px;
+            font-size: 35px;
+            border-radius: 12px;
+            border: 3px solid;
+            margin: 12px;
+        }
+
+        #password {
+            margin: 12px;
+            width: 250px;
+            height: 40px;
+            font-size: 35px;
+            border-radius: 12px;
+            border: 3px solid;
+        }
+
+        h2 {
+            font-size: 60px;
+            font-family: fantasy;
+        }
+
+        #submit {
+            border-radius: 12px;
+            width: 123px;
+            height: 40px;
+            margin-left: 15px;
+            border: 3px solid;
+            background: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>login now</h2>
+    <form action="/admin" method="post">
+        <input type="text" name="username" placeholder="username" id="username">
+        <input type="password" name="password" placeholder="password" id="password">
+        <input type="submit" value="login" name="submit" id="submit">
+    </form>
+</body>
+
+</html>

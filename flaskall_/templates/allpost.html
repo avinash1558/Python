@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{url_for('static',filename=" avi.css")}}">
+
+</head>
+
+<body>
+    <div id="menu">
+        <div id="box1"><img src="1st.png" alt="myordersite"></div>
+        <div id="box2">
+            <ul type="none" id="nav">
+                <!--<li>"{{nametohtml}}"</li>-->
+                <li>home</li>
+                <li>Service</li>
+                <li>About as</li>
+                <li>Contect</li>
+            </ul>
+        </div>
+    </div>
+    <div>
+        <!-- <h1 id="det">{{name}}</h1> -->
+        {% for pos in post%}
+        <h1 id="det">{{pos.title}}</h1>
+        <h1 id="det">{{pos.title[0:12]}}</h1>
+        <p class="pas">Lorem,r sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing eli</p>
+        <a href="/post/first" class="pas">{{pos.date}}</a>
+        <a href="/delete/{{pos.sn}}"><button id="but">Order Now</button></a>
+        <hr>
+        {% endfor %}
+        <form action="/file" enctype='multipart/form-data' method="post">
+            <input type="file" name="file">
+            <button type="submit">now you submit</button>
+        </form>
+    </div>
+</body>
+
+</html>

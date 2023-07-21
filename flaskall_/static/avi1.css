@@ -1,0 +1,141 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+/* navbar */
+#menu{
+    font-size: 23px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+#menu::before{
+    content:"" ;
+    background-color:black;
+    position:absolute;
+    height: 9%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+/* navbar img */
+img{
+    width: 64px;
+    margin: 11px 10px;
+    position: relative;
+    top: 2px;
+}
+/* home */
+#nav{
+    display: flex;
+}
+li{
+    padding: 0px 53px;
+}
+li:hover{
+    background-color: white;
+    color: black;
+    border-radius: 12px;
+}
+/* section */
+#sec{
+    color: white;
+    height: 119px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#sec::before{
+    content: "";
+    background: url(4.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 76%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+#det{
+    font-size: 54px;
+    margin: 30px;
+}
+.pas{
+    font-size: 22px;
+
+}
+#but{
+    background-color: tomato;
+}
+#but:hover{
+    background-color: blanchedalmond;
+}
+#ser{
+    text-align: center;
+    font-size: 39px;
+    padding: 37px;
+}
+.sec{
+    display: flex;
+} 
+.nav{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    margin: 0px 10px;
+    border: 2px solid tomato;
+    border-radius: 10px;
+}
+.img{
+    text-align: center;
+    width: 133px;
+    height: 132px;
+}
+
+#img::before{
+    content: "";
+    background: url('3.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 67%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+#h1{
+    text-align: center;
+    font-size: 68px;
+}
+
+#help{
+    display: flex;
+    justify-content: space-between ;
+}
+.help1{
+    margin: 0% 12px;
+}
+.help{
+    width: 208px;
+    height: 174px;
+}
+.em{
+    text-align: center;
+    font-size: 68px;
+}
+.det{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bc::before{
+    content: "";
+    background: url('3-1.png') no-repeat center center/cover;
+    position: absolute;
+    height: 12%;
+    width: 10%;
+    z-index: -1;
+    opacity: 0.89;
+}
+input{
+    width: 326px;
+    height: 30px;
+}

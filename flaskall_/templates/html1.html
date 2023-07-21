@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{url_for('static',filename=" avi.css ")}}">
+
+</head>
+
+<body>
+    <div id="menu">
+        <div id="box1"><img src="1st.png" alt="myordersite"></div>
+        <div id="box2">
+            <ul type="none" id="nav">
+                <!--<li>"{{nametohtml}}"</li>-->
+                <li>home</li>
+                <li>Service</li>
+                <li>About as</li>
+                <li>Contect</li>
+            </ul>
+        </div>
+    </div>
+    <div id="sec">
+        <!-- <h1 id="det">{{name}}</h1> -->
+        {% for pos in post%}
+        <h1 id="det">{{pos.title}}</h1>
+        <h1 id="det">{{pos.title[0:12]}}</h1>
+        <p class="pas">Lorem,r sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing eli</p>
+        <a href="/post/first" class="pas">{{pos.date}}</a> {% endfor %}
+        <button id="but">Order Now</button>
+    </div>
+
+    <div class="col">
+        <br>
+        <br>
+        <br>
+        <div id="ser">
+            <h1>Service</h1>
+        </div>
+        <div class="sec">
+            <div class="nav">
+                <img src="{{url_for('static',filename=" 2-1.jpg " )}}" alt="" class="img">
+                <h2>Lorem ipsum </h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima a eum expedita.</p>
+            </div>
+            <div class="nav">
+                <img src="{{url_for('static',filename=" 2-2.jpg " )}}" alt="" class="img">
+                <h2>Lorem ipsum</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima a eum expedita.</p>
+            </div>
+            <div class="nav">
+                <img src="{{url_for('static',filename=" 2-3.jpg " )}}" alt="" class="img">
+                <h2>Lorem ipsum</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima a eum expedita.</p>
+            </div>
+        </div>
+        <br>
+        <br>
+
+    </div>
+    <div id="img">
+        <div class="as">
+            <h1 id="h1">Helper</h1>
+        </div>
+        <div id="help">
+
+            <div class="help1"><img src="{{ url_for('static' ,filename=" images (1).png " )}}" alt="" class="help"></div>
+            <div class="help1"><img src="{{url_for('static',filename=" images.jpg " )}}" alt="" class="help"></div>
+            <div class="help1"><img src="{{ url_for('static',filename=" images (2).png " )}}" alt="" class="help"></div>
+        </div>
+    </div>
+    <div id="bc">
+        <div>
+            <h1 class="em"> Detail</h1>
+        </div>
+        <div class="">
+            <form action="/" method="post" class="det">
+                <label for="na">Name:</label>
+                <input type="text" name="name" id="na">
+                <label for="na1">E-mail:</label>
+                <input type="email" name="email" id="na1">
+                <label for="na2">Password:</label>
+                <input type="password" name="password" id="na2">
+                <label for="na3">Feedback:</label>
+                <input type="textarea" id="na3" name="feed">
+                <input type="submit" id="na3" value="now">
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>

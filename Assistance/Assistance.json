@@ -1,0 +1,22 @@
+{
+    "Names": {
+        "DeviceName": "Assistance",
+        "MyName": "Avinash",
+        "FriendName": "avin"
+    },
+    "Mail": {
+        "smtp": "smtp.gmail.com",
+        "smtphost": 587,
+        "Emailid": "as0223080@gmail.com",
+        "Emailpassword": "gnnlaeyadbpqkljp",
+        "SenderID": "rohitsharma10093@gmail.com",
+        "Subject": ""
+    },
+    "Language": {
+        "support": "en"
+    },
+    "RequirementModule": {
+        "install": "gtts, pywhatkit , SpeechRecognition,pyttsx3 , phonenumbers,wikipedia ,pywhatkit,pytube,googletrans==4.0.0rc1,pygame,speedtest-cli,pyjokes,playsound==1.2.2",
+        "bild": "datetime, webbrowser, os, smtplib,json,time,re,random"
+    }
+}

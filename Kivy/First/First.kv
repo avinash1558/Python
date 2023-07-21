@@ -1,0 +1,82 @@
+Stack_Layout:
+
+
+<Stack_Layout>:
+    #lr -bt
+    orientation:"lr-bt"
+    padding:("20dp","20dp","20dp","20dp")
+    spacing:"20dp","20dp"
+    Button:
+        text:"B"
+        size_hint:0.3,0.2
+    Button:
+        text:"B"
+        size_hint:0.3,0.2
+    Button:
+        text:"B"
+        size_hint:0.3,0.2
+    Button:
+        text:"B"
+        size_hint:0.3,0.2
+    Button:
+        text:"B"
+        size_hint:0.3,0.2
+    Button:
+        text:"B"
+        size_hint:0.3,0.2
+    Button:
+        text:"B"
+        size_hint:0.3,0.2
+    Button:
+        text:"B"
+        size_hint:0.3,0.2
+
+<Grid_Layout@GridLayout>:
+    rows:2
+    Button:
+        text:"B"
+        size_hint:0.3,0.2
+    Box_Layout:
+
+<Anchor_Layout>:
+    #right,left,center --- x
+    #anchor_x:"right"
+    #bottom,center,top   ==y
+    #anchor_y:"center"
+    Button:
+        text:"B"
+        size_hint:0.3,0.2
+
+
+<Box_Layout>:
+    orientation:"vertical"
+    Button:
+    #size fixed
+        text:"aviaa"
+        #size:"70dp","70dp"
+        heigth:"70dp"
+        width:"70dp"
+        size_hint:None ,None
+        #x,center_x,right =="vertical"
+        #y,center_y,top   =="horizontal"
+        pos_hint:{"center_x":0.5}
+
+    Button:
+        text:"B"
+        size_hint:0.3,0.2
+
+
+    MainWidget:
+
+
+
+<MainWidget>:
+    Button:
+        text:"avinash"
+        size:"100dp","100dp"
+        pos:"100dp","200dp"
+    Label:
+        text:"avinash"
+        size:"100dp","100dp"
+        pos:"100dp","100dp"
+        color:1,0,0,1

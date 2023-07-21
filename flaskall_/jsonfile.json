@@ -1,0 +1,11 @@
+{
+    "params": {
+        "database": "pizza",
+        "localhost": {
+            "password":"",
+            "id":"root"
+        },
+        "datatitle":"avinash a pizza"
+    }
+
+}
